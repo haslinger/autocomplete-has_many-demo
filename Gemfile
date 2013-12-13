@@ -13,7 +13,8 @@ end
 
 gem 'jquery-rails'
 
-# gem 'debugger'
+gem 'debugger'
+gem 'thin'
 
 gem "hobo", "= 2.0.1"
 gem "quiet_assets", :group => :development
