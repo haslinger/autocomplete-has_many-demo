@@ -13,5 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-app/views/taglibs/auto/**/*
-config/hobo_routes.rb
+
+# HAS: 20131213: for Heroku deployment
+# app/views/taglibs/auto/**/*
+# config/hobo_routes.rb
