@@ -1,0 +1,27 @@
+<!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
+
+
+<def tag="card" for="Dummy">
+  <card class="dummy" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+  </card>
+</def>
+
+<def tag="card" for="Relation">
+  <card class="relation" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+  </card>
+</def>
+
+<def tag="card" for="User">
+  <card class="user" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+  </card>
+</def>
+
