@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131213203114) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "dummies", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -26,8 +29,8 @@ ActiveRecord::Schema.define(version: 20131213203114) do
     t.integer  "related_dummy_id"
   end
 
-  add_index "relations", ["dummy_id"], name: "index_relations_on_dummy_id"
-  add_index "relations", ["related_dummy_id"], name: "index_relations_on_related_dummy_id"
+  add_index "relations", ["dummy_id"], name: "index_relations_on_dummy_id", using: :btree
+  add_index "relations", ["related_dummy_id"], name: "index_relations_on_related_dummy_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "crypted_password",          limit: 40
@@ -43,6 +46,6 @@ ActiveRecord::Schema.define(version: 20131213203114) do
     t.datetime "key_timestamp"
   end
 
-  add_index "users", ["state"], name: "index_users_on_state"
+  add_index "users", ["state"], name: "index_users_on_state", using: :btree
 
 end

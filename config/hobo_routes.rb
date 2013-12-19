@@ -5,6 +5,10 @@
 Demo::Application.routes.draw do
 
 
+  # Resource routes for controller relations
+  resources :relations
+
+
   # Resource routes for controller dummies
   resources :dummies do
     collection do
@@ -27,11 +31,10 @@ Demo::Application.routes.draw do
   end
 
   # User routes for controller users
+  post 'login(.:format)' => 'users#login', :as => 'user_login_post'
   get 'login(.:format)' => 'users#login', :as => 'user_login'
   get 'logout(.:format)' => 'users#logout', :as => 'user_logout'
   get 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
-
-  # Resource routes for controller relations
-  resources :relations
+  post 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password_post'
 
 end
