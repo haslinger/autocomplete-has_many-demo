@@ -27,10 +27,9 @@ Demo::Application.routes.draw do
   end
 
   # User routes for controller users
-  match 'login(.:format)' => 'users#login', :as => 'user_login'
+  get 'login(.:format)' => 'users#login', :as => 'user_login'
   get 'logout(.:format)' => 'users#logout', :as => 'user_logout'
-  match 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
-
+  get 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
 
   # Resource routes for controller relations
   resources :relations
