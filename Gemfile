@@ -1,30 +1,33 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '4.0.2'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 1.2'
 
-gem 'pg'
+group :doc do
+  gem 'sdoc', require: false
+end
+
+gem "hobo", "= 2.1.0.pre1"
+gem "protected_attributes"
+gem "quiet_assets", group: :development
+gem "hobo_will_paginate"
+gem "hobo_bootstrap", "2.1.0.pre1"
+gem "hobo_jquery_ui", "2.1.0.pre1"
+gem "hobo_bootstrap_ui", "2.1.0.pre1"
+gem "jquery-ui-themes", "~> 0.0.4"
+gem 'rails_12factor'
 
 group :development do
   gem 'sqlite3'
+gem 'debugger'
+gem 'thin'
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
   gem 'therubyracer', :platforms => :ruby
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.3.0'
 end
-
-gem 'jquery-rails'
-
-gem 'debugger'
-gem 'thin'
-
-gem "hobo", "= 2.0.1"
-gem "quiet_assets", :group => :development
-gem "will_paginate", :git => "git://github.com/Hobo/will_paginate.git"
-gem "hobo_bootstrap", "2.0.1"
-gem "hobo_jquery_ui", "2.0.1"
-gem "hobo_bootstrap_ui", "2.0.1"
-gem "jquery-ui-themes", "~> 0.0.4"
-gem 'rails_12factor'
