@@ -1,14 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
-gem 'pg'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-
-group :doc do
-  gem 'sdoc', require: false
-end
 
 gem "hobo", "= 2.1.0.pre1"
 gem "protected_attributes"
@@ -22,8 +17,12 @@ gem 'rails_12factor'
 
 group :development do
   gem 'sqlite3'
-gem 'debugger'
-gem 'thin'
+  gem 'debugger'
+  gem 'thin'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :assets do
