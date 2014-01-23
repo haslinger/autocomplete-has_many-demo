@@ -1,19 +1,2 @@
 <!-- this file is included by front_site.dryml, admin_site.dryml et al, so
 you can place common code in this file. -->
-
-<extend tag="form" for="Dummy">
-  <old-form merge>
-    <field-list: fields="name, date, relations" param>
-      <relations-view:>
-        <input-many>
-          <field-list fields="related-dummy" size="5">
-            <related-dummy-label: replace/>
-            <related-dummy-view:>
-              <name-one complete-target="&@related_dummy" completer="name" autocomplete="off" />
-            </related-dummy-view:>
-          </field-list>
-        </input-many>
-      </relations-view:>
-    </field-list:>
-  </old-form>
-</extend>
