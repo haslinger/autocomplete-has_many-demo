@@ -3,7 +3,7 @@ you can place common code in this file. -->
 
 <extend tag="form" for="Dummy">
   <old-form merge>
-    <field-list: fields="name, mydate, relations" param>
+    <field-list: fields="name, date, relations" param>
       <relations-view:>
         <input-many>
           <field-list fields="related-dummy" size="5">
