@@ -7,13 +7,13 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
-gem "hobo", "= 2.1.0.pre1"
+gem "hobo", "= 2.1.0.pre4"
 gem "protected_attributes"
 gem "quiet_assets", group: :development
 gem "hobo_will_paginate"
-gem "hobo_bootstrap", "2.1.0.pre1"
-gem "hobo_jquery_ui", "2.1.0.pre1"
-gem "hobo_bootstrap_ui", "2.1.0.pre1"
+gem "hobo_bootstrap", "2.1.0.pre4"
+gem "hobo_jquery_ui", "2.1.0.pre4"
+gem "hobo_bootstrap_ui", "2.1.0.pre4"
 gem "jquery-ui-themes", "~> 0.0.4"
 gem 'rails_12factor'
 

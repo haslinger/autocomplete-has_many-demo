@@ -4,6 +4,7 @@ class Dummy < ActiveRecord::Base
 
   fields do
     name :string
+    date :date
     timestamps
   end
   attr_accessible :name, :relations, :ralated_dummies

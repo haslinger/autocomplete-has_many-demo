@@ -94,6 +94,7 @@
     </content-header:>
 
     <content-body: param>
+      <field-list fields="date" param/>
     </content-body:>
 
   </page>
