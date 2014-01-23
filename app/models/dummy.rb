@@ -4,10 +4,10 @@ class Dummy < ActiveRecord::Base
 
   fields do
     name :string
-    date :date
+    mydate :date
     timestamps
   end
-  attr_accessible :name, :relations, :ralated_dummies
+  attr_accessible :name, :relations, :ralated_dummies, :mydate
 
   has_many :ralated_dummies, :through => :relations
   has_many :relations, :inverse_of => :dummy, dependent: :destroy, :accessible => true

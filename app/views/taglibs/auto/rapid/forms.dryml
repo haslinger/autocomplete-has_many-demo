@@ -4,7 +4,7 @@
 <def tag="form" for="Dummy">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, date, relations" param/>
+    <field-list fields="name, mydate, relations" param/>
     <div param="actions">
       <submit label="#{ht 'dummy.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
